@@ -22,7 +22,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://cattle-breed-detector-wbup.onrender.com//predict", {
+      const response = await fetch("https://cattle-breed-detector-wbup.onrender.com/predict", {
         method: "POST",
         body: formData,
       });
