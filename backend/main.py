@@ -14,7 +14,7 @@ app = FastAPI()
 # Enable CORS so frontend can connect
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://cattle-breed-detector-q9v9v16nn-nisha-shetty03s-projects.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
