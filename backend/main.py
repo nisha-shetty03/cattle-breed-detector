@@ -14,7 +14,7 @@ app = FastAPI()
 # Enable CORS so frontend can connect
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://cattle-breed-detector-q9v9v16nn-nisha-shetty03s-projects.vercel.app"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -30,7 +30,7 @@ if not os.path.exists(MODEL_PATH):
 
 # Load model
 model = load_model(MODEL_PATH,compile=False)
-model.save("cattle_model_v3.keras")
+#model.save("cattle_model_v3.keras")
 # Class names (must match your model training)
 class_names = list(breed_details.keys())
 print(class_names)
