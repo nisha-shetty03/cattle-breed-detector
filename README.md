@@ -35,15 +35,11 @@ Cattle Breed Detector uses a computer vision model to classify the breed of catt
 # Clone the repository
 git clone https://github.com/Nisha-shetty03/<repo-name>.git
 cd <repo-name>
-
-# [Add backend setup steps here, e.g. pip install -r requirements.txt]
+backend setup
+ pip install -r requirements.txt
 ```
 
-## ▶️ Usage
 
-```bash
-# [Add the command(s) to run the app, e.g. python app.py]
-```
 
 Then open your browser at `[http://localhost:PORT]` and upload a cattle image to get started.
 
