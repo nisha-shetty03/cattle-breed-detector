@@ -18,9 +18,10 @@ Cattle Breed Detector uses a computer vision model to classify the breed of catt
 
 | Layer | Technology |
 |---|---|
-| Model / CV Pipeline | Python |
-| Backend Logic | Java |
-| Frontend | JavaScript, CSS |
+| Model / CV Pipeline | Python, TensorFlow |
+| Backend | FastAPI |
+| Frontend | React (Vite), JavaScript, CSS |
+| Deployment | Render |
 
 ## 🚀 How It Works
 
@@ -29,19 +30,35 @@ Cattle Breed Detector uses a computer vision model to classify the breed of catt
 3. The app looks up breed-specific details (origin, milk yield, best use).
 4. Results are displayed to the user through the web front-end.
 
-## ⚙️ Installation
+## ⚙️ Installation & Usage
+
+Clone the repository first:
 
 ```bash
-# Clone the repository
-git clone https://github.com/Nisha-shetty03/<repo-name>.git
+git clone https://github.com/Nishashetty03/<repo-name>.git
 cd <repo-name>
-backend setup
- pip install -r requirements.txt
 ```
 
+**Backend** (from `backend/`):
 
+```bash
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
 
-Then open your browser at `[http://localhost:PORT]` and upload a cattle image to get started.
+**Frontend** (from `frontend/`):
+
+```bash
+npm install
+VITE_API_URL=https://YOUR-API.onrender.com npm run dev
+```
+
+Once both are running, open the frontend in your browser and upload a cattle image to get started.
+
+## 📁 Project Structure
+
+- `backend/` — FastAPI + TensorFlow model
+- `frontend/` — React (Vite) UI
 
 ## 📊 Model Details
 
