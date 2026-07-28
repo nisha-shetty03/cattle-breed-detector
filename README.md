@@ -1,1 +1,1 @@
-Using this project one can determine the breed of a cattle easily
+Cattle breed detector helps people to detect the breed of the cattle using the image. It not  only detects the breed but also provides additional informations like origin of the breed , milk yield and its best use.
